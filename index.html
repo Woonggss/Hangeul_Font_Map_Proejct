@@ -13,11 +13,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;300;500;800&display=swap" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">  -->
+    <!-- bootstrap css인데 적용 시 다른 css가 깨짐 -->
+    
 </head>
 
 <body>
 
     <div class="container">
+
 
         <section id="control_pt" class="font_family_wrap">
             <div class="font_control_wrap">
@@ -25,8 +29,19 @@
                     <div class="font-detail content row">
                         <div class="main-font">
                             <div class="font-title">SM3신신명조 03 신명조 03</div>
-                            <div class="font-google-link hidden-xs"><a class="google-link" href="#" target="_blank">직지소프트</a></div>
+                            <div class="font-google-link hidden-xs"><a class="google-link" href="#"
+                                    target="_blank">직지소프트</a></div>
                         </div>
+
+                        <nav class="navbar navbar-light bg-light">
+                            <div class="container-fluid">
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </nav>
 
                         <div class="neighboring-fonts expanded">
                             <div class="section__label">+</div>
@@ -38,13 +53,16 @@
                                     <div class="font-50 neighboring-font__name">SM세고딕</div>
                                 </div>
 
+
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="control_box1">
                     <div class="input_box2 short2 col-3">
-                        <input type="text" maxlength='0' class="input_text_value effect-1" placeholder="가" data-gubun="0">
+                        <input type="text" maxlength='0' class="input_text_value effect-1" placeholder="가"
+                            data-gubun="0">
                         <span class="focus-border"></span>
                     </div>
                 </div>
@@ -127,7 +145,7 @@
         </footer>
 
         <script>
-            $(".input_text_value").keyup(function() {
+            $(".input_text_value").keyup(function () {
 
                 var gubun = $(this).data("gubun");
                 var text = $(this).val();
@@ -167,7 +185,7 @@
 
 
 
-                $(".ch_text2_" + gubun).each(function() {
+                $(".ch_text2_" + gubun).each(function () {
 
                     $(this).html(replaceQuote(text));
 
@@ -185,6 +203,9 @@
                 }
 
             });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
         </script>
 </body>
 

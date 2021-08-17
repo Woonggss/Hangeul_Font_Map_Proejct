@@ -136,3 +136,8 @@ input[type="text"] {
     color: gray;
     display: none;
 }
+
+.navbar {
+    float: right;
+    margin-left: 20px;
+}
