@@ -140,10 +140,11 @@ def make_count_column(df, fontname):
 # In[90]:
 
 
-# 유사한 폰트 4개를 볼 수 있습니다. (자기 자신까지 5개)
+# 유사한 폰트 4개를 볼 수 있습니다.
 # 해당 함수가 있는 코드블럭 참조
-a = return_similar_fonts(df_new,'J슈퍼맨M')
-print(a)
+# [1:] 달아줘야 자기 자신은 제외하고 뽑힘
+similar_list_top4 = return_similar_fonts(df_new,'J슈퍼맨M')[1:]
+print(similar_list_top4)
 
 
 # In[91]:
